@@ -1,0 +1,130 @@
+/**************** regervation_part css start ****************/
+.regervation_part {
+    background-color: $btn_bg;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        width: 50%;
+        height: 100%;
+        @include background("../img/reservation_bg.png");
+        background-size: cover;
+        z-index: -1;
+
+        @media #{$small_mobile} {
+            display: none;
+        }
+
+        @media #{$large_mobile} {
+            display: none;
+        }
+
+        @media #{$tab_device} {
+            display: none;
+        }
+
+        @media #{$medium_device} {}
+    }
+
+    .regervation_part_iner {
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: $white_color;
+            line-height: 40px;
+            margin-bottom: 60px;
+
+            @media #{$tab} {
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+
+            @media #{$medium_device} {}
+        }
+
+        input {
+            color: #999 !important;
+        }
+
+        .form-control {
+            background-color: transparent;
+            color: #999 !important;
+            border: 1px solid #a1a5a5;
+            font-size: 14px;
+            font-family: $font_stack_1;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            height: 45px;
+            border-radius: 3px;
+            padding: .375rem 2rem;
+            @media #{$tab}{
+                margin-bottom: 0px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+
+        .btn_1 {
+            border-radius: 0;
+
+            &:hover {
+                background-color: $white_color;
+                color: $btn_hover;
+            }
+        }
+    }
+
+    ::placeholder {
+        color: #fff !important;
+    }
+
+    .reservation_text {
+        width: 72%;
+        margin-left: 85px;
+        @media #{$tab}{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 30px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: $white_color;
+            margin-bottom: 22px;
+            @media #{$tab}{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+
+        p {
+            color: $white_color;
+            margin-bottom: 44px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+    }
+    @media #{$tab}{
+        .btn_1{
+            margin-top: 0px;
+        }
+    }
+    @media #{$medium_device}{
+    
+    }
+}

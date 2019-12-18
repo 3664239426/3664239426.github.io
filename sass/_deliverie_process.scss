@@ -1,0 +1,32 @@
+/*************** deliverie process css ****************/
+.deliverie_process {
+    @media #{$tab}{
+        padding: 70px 0 50px;
+    }
+}
+.single_deliverie_process{
+    text-align: center;
+    @media #{$tab}{
+        margin-bottom: 20px;
+    }
+    @media #{$medium_device}{
+    
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 32px 0 25px;
+        @media #{$small_mobile}{
+            margin: 10px 0;
+        }
+        @media #{$large_mobile}{
+        
+        }
+        @media #{$tab_device}{
+        
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+}

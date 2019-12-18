@@ -1,0 +1,75 @@
+.breadcrumb_bg {
+	@include background("../img/breadcrumb.png");
+}
+
+.breadcrumb {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 0;
+	&:after{
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		z-index: -1;
+		opacity: .8;
+		content: "";
+	}
+	.breadcrumb_iner {
+		height: 550px;
+		width: 100%;
+		display: table;
+		@media #{$tab}{
+			height: 350px;
+		}
+		@media #{$medium_device}{
+			height: 400px;
+		}
+		.breadcrumb_iner_item {
+			display: table-cell;
+			vertical-align: middle;
+
+			h2 {
+				color: $black_color;
+				font-size: 100px;
+				font-weight: 700;
+				margin-bottom: 10px;
+				text-transform: capitalize;
+				color: $btn_hover;
+				@media #{$small_mobile} {
+					font-size: 35px;
+				}
+
+				@media #{$large_mobile} {
+					font-size: 35px;
+				}
+
+				@media #{$tab_device} {
+					font-size: 40px;
+				}
+
+				@media #{$medium_device} {}
+			}
+
+			p {
+				font-size: 15px;
+				color: $black_color;
+				text-transform: capitalize;
+			}
+
+			span {
+				margin: 0px 5px;
+				font-size: 12px;
+			}
+
+		}
+	}
+
+}
+
+.breadcrumb {
+	margin-bottom: 0px !important;
+}

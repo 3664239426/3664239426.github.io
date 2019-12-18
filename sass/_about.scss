@@ -1,0 +1,195 @@
+/**************** about css start ****************/
+.about_part {
+    position: relative;
+    z-index: 1;
+    padding: 355px 0 180px;
+    @media #{$tab}{
+        padding: 140px 0px 70px;
+    }
+    @media #{$medium_device}{
+        padding: 160px 0px 80px;
+    }
+    &:after {
+        position: absolute;
+        left: 10%;
+        content: "";
+        width: 90%;
+        height: 77%;
+        background-color: #f3f1ef;
+        z-index: -1;
+        top: 355px;
+        @media #{$tab}{
+            display: none;
+        }
+        @media #{$medium_device}{
+            height: 90%;
+            top: 30%;
+            width: 95%;
+            left: 5%;
+        }
+    }
+
+    .about_part_text{
+        background-color: $btn_bg;
+        padding: 75px 50px 50px 35px;
+        border: 22px solid $white_color;
+        margin-top: -75px;
+        @media #{$small_mobile}{
+            border: 0px solid $white_color;
+            padding: 25px 25px 25px 15px;
+            margin-top: 0;
+        }
+        @media #{$large_mobile}{
+            border: 0px solid $white_color;
+            padding: 25px 25px 25px 15px;
+            margin-top: 0;
+        }
+        @media #{$tab_device}{
+            margin-top: 0;
+        }
+        @media #{$medium_device}{
+            margin-top: 0;
+        }
+        .about_text_iner{
+            border-left: 1px solid $white_color;
+            padding-left: 39px;
+            @media #{$small_mobile}{
+                padding-left: 20px;
+            }
+            @media #{$large_mobile}{
+                padding-left: 20px;
+            }
+            @media #{$tab_device}{
+            
+            }
+            @media #{$medium_device}{
+            
+            }
+            p{
+                color: $white_color;
+                margin-bottom: 25px;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    left: -49px;
+                    top: 0;
+                    content: "";
+                    width: 19px;
+                    height: 19px;
+                    background-color: $btn_hover;
+                    border-radius: 50%;
+                    @media #{$small_mobile}{
+                        left: -30px;
+                    }
+                    @media #{$large_mobile}{
+                        left: -30px;
+                    }
+                    @media #{$tab_device}{
+                    
+                    }
+                    @media #{$medium_device}{
+                    
+                    }
+                }
+            }
+        }
+    }
+    .about_part_img{
+        position: absolute;
+        right: 0;
+        top: 150px;
+        width: 880px;
+        height: 680px;
+        @media #{$small_mobile}{
+            width: 100%;
+            height: auto;
+            left: 0;
+            margin: 0 auto;
+            position: relative;
+            top: 25px;
+        }
+        @media #{$large_mobile}{
+            width: 100%;
+            height: auto;
+            left: 0;
+            margin: 0 auto;
+            position: relative;
+            top: 25px;
+        }
+        @media #{$tab_device}{
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            top: 75px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        h2{
+            left: 62%;
+            font-size: 48px;
+            color: #6345fe;
+            position: absolute;
+            text-transform: capitalize;
+            top: -26%;
+            @media #{$small_mobile}{
+                left: 0;
+                top: -40px;
+                font-size: 25px;
+            }
+            @media #{$large_mobile}{
+                left: 0;
+                top: -40px;
+                font-size: 25px;
+            }
+            @media #{$tab_device}{
+                left: 0;
+                font-size: 25px;
+            }
+            @media #{$medium_device}{
+                top: -10%;
+            }
+        
+        }
+    }
+}
+// .single_about_padding{
+//     padding: 180px 0 194px;
+//     margin-bottom: 400px;
+//     &:after {
+//         position: absolute;
+//         left: 10%;
+//         content: "";
+//         width: 90%;
+//         height: 115%;
+//         background-color: #f3f1ef;
+//         z-index: -1;
+//         top: 183px;
+//     }
+// }
+.single_about_padding{
+    padding: 232px 0 193px;
+    margin-bottom: 400px;
+    @media #{$tab}{
+        margin-bottom: 0;
+        padding: 77px 0px 70px;
+    }
+    @media #{$medium_device}{
+        padding: 57px 0px 80px;
+        margin-bottom: 280px;
+    }
+    &:after {
+        position: absolute;
+        left: 10%;
+        content: "";
+        width: 90%;
+        height: 90%;
+        background-color: #f3f1ef;
+        z-index: -1;
+        top: 238px;
+        @media #{$medium_device}{
+            height: 100%;
+            top: 171px;
+        }
+    }
+}

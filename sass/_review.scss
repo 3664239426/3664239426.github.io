@@ -1,0 +1,30 @@
+/**************** review css start ****************/
+.client_review {
+    .single_deliveries_text {
+        padding: 1px 25px !important;
+    }
+    .single_deliveries_text_iner {
+        padding-left: 100px;
+        img{
+            position: absolute;
+            left: 0;
+            top: 10px;
+            max-width: 80px !important;
+        }
+        p{
+            padding-left: 0 !important;
+            margin: 15px 0 !important;
+        }
+        h5{
+            font-size: 18px;
+            font-weight: 800;
+            margin-top: 19px;
+        }
+        span{
+            padding-bottom: 18px;
+            margin-top: 8px;
+            display: block;
+            color: #777777;
+        }
+    }
+}

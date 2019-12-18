@@ -1,0 +1,127 @@
+/****************** deliveries part css *******************/
+.blog_part {
+    @media #{$tab}{
+        padding: 0 0 40px
+    }
+    @media #{$medium_device}{
+    
+    }
+    .blog_tittle {
+        h2 {
+            font-size: 48px;
+            color: $btn_bg;
+            font-weight: 700;
+            margin-bottom: 90px;
+            line-height: 40px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+            @media #{$medium_device}{
+            margin-bottom: 50px;
+            }
+        }
+    }
+
+    .single_blog {
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        .single_blog_img {
+            position: relative;
+
+            .date {
+                position: absolute;
+                bottom: 0;
+                background-color: $btn_bg;
+                padding: 15px 15px;
+                text-align: center;
+                text-transform: uppercase;
+                span {
+                    color: $white_color;
+                    font-size: 35px;
+                    line-height: 0;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    @media #{$tab}{
+                        font-size: 20px;
+                    }
+                    @media #{$medium_device}{
+                    
+                    }
+                }
+
+                h1 {
+                    font-size: 45px;
+                    color: $white_color;
+                    color: $white_color;
+                    line-height: 30px;
+                    font-weight: 800;
+                    @media #{$tab}{
+                        font-size: 25px;
+                        line-height: 20px;
+                    }
+                    @media #{$medium_device}{
+                    
+                    }
+                }
+            }
+        }
+        .single_blog_text{
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eeeeee;
+            a{
+                color: #999999;
+                margin-right: 30px;
+                @media #{$large_mobile}{
+                    margin-right: 15px;
+                }
+                @media #{$tab_device}{
+                    margin-right: 15px;
+                }
+                @media #{$medium_device}{
+                
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+            h3{
+                font-size: 24px;
+                margin: 20px 0 15px;
+                a{
+                    color: #222222;
+                }
+            }
+            p{
+                margin-bottom: 17px;
+            }
+            
+        }
+    }
+    .btn_3{
+        color: $black_color;
+        font-weight: 500;
+        text-transform: capitalize;
+        &:hover{
+            color: $btn_hover;
+        }
+        i{
+            margin-left: 5px;
+            font-size: 12px;
+        }
+    }
+    h1 {
+        font-size: 2em;
+        margin: 0 !important;
+    }
+}
+.single_blog_page{
+    @media #{$tab}{
+        padding: 70px 0 40px
+    }
+}

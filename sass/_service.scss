@@ -1,0 +1,103 @@
+/**************** service_part css start ****************/
+.service_part {
+   padding: 400px 0 116px;
+   @media #{$tab}{
+      padding: 0 0 50px;
+   }
+   @media #{$tab_device}{
+      padding: 70px 0 50px;
+   }
+   
+   @media #{$medium_device}{
+      padding: 284px 0 15px;
+   }
+   .service_text{
+      @media #{$tab}{
+      margin-bottom: 50px;
+      }
+      @media #{$medium_device}{
+      
+      }
+      h2{
+         font-size: 48px;
+         color: $btn_bg;
+         margin-bottom: 30px;
+         @media #{$tab}{
+            font-size: 30px;
+            margin-bottom: 15px;
+         }
+         @media #{$medium_device}{
+            font-size: 40px;
+            margin-bottom: 15px;
+         }
+         span{
+            font-weight: 400;
+
+         }
+      }
+      p{
+         margin-bottom: 15px;
+      }
+      .btn_1{
+         margin-top: 45px;
+         @media #{$tab}{
+            margin-top: 10px;
+         }
+         @media #{$medium_device}{
+         
+         }
+      }
+   }
+   .single_service_text{
+      width: 50%;
+      float: left;
+      padding-left: 31px;
+      margin-bottom: 55px;
+      @media #{$small_mobile}{
+         width: 100%;
+      }      
+      @media #{$tab}{
+         padding-right: 20px;
+         padding-left: 0;
+         margin-bottom: 20px;
+      }
+      @media #{$medium_device}{
+      
+      }
+      h4{
+         font-size: 24px;
+         font-weight: 700;
+         margin: 37px 0 35px;
+         @media #{$tab}{
+            margin: 15px 0 15px;
+         }
+         @media #{$medium_device}{
+            margin: 15px 0 15px;
+         }
+      }
+   }
+}
+@media #{$tab}{
+   .mt_30{
+      margin-top: 30px;
+   }
+}
+@media #{$medium_device}{
+
+}
+.single_page_service{
+   padding: 180px 0 116px;
+   @media #{$tab}{
+      padding: 70px 0 50px ;
+   }
+   @media #{$medium_device}{
+      padding: 75px 0 50px;
+   }
+   .btn_1{
+      background-color: $btn_bg;
+      color: $white_color;
+      &:hover{
+         color: $btn_hover;
+      }
+   }
+}
